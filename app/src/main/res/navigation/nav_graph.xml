@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.apphub.fayzullo.presentation.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_appsFragment"
+            app:destination="@id/appsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="uz.apphub.fayzullo.presentation.fragments.PermissionsFragment"
+        android:label="fragment_permissions"
+        tools:layout="@layout/fragment_permissions" />
+    <fragment
+        android:id="@+id/appsFragment"
+        android:name="uz.apphub.fayzullo.presentation.fragments.AppsFragment"
+        android:label="fragment_apps"
+        tools:layout="@layout/fragment_apps" >
+        <action
+            android:id="@+id/action_appsFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.apphub.fayzullo.presentation.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

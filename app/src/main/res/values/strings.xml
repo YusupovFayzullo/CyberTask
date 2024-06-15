@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YULDUZ</string>
+    <string name="first_text">Biz bilan qurilmangizni xavfsizlikda saqlang.</string>
+    <string name="second_text">Qurilmangizni (o‘zingizni) kiber firibgarlardan asrang !</string>
+    <string name="third_text">O’z shaxsiy hayotingizni kiberbuzg’unchilarga berib qo’ymang!</string>
+    <string name="fourth_text">O’z qurilmangni – birga asraymiz !</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_union_local_dashboard">Your union local dashboard</string>
+</resources>
