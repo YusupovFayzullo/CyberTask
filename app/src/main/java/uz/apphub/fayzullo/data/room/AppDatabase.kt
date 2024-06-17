@@ -9,5 +9,6 @@ import uz.apphub.fayzullo.data.room.entity.SignatureEntity
 
 @Database(entities = [SignatureEntity::class], version = 1)
 abstract class AppDatabase: RoomDatabase() {
+
     abstract fun cardDao(): SignatureDao
 }
