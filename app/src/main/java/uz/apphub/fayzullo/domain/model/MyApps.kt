@@ -7,5 +7,7 @@ data class MyApps(
     var appIcon: Drawable,
     val isPlayMarket: Boolean,
     var permissionModels: List<PermissionModel>,
+    var packageName:String,
+    var hashSHA256 :String
 
 )
